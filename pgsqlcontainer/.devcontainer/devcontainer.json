@@ -1,0 +1,26 @@
+{
+    "name": "PostgreSQL Development Environment",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "workspace",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "cweijan.vscode-database-client2",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg",
+                "redhat.vscode-yaml"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "forwardPorts": [
+        5433,
+        8081
+    ]
+}
